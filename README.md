@@ -8,7 +8,8 @@ This project processes data from the source (https://d396qusza40orc.cloudfront.n
 5. From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.  
 
 **Notes on processing script:**  
-
+  
+* script expects source files being present in R working directory  
 * First 3 processing steps are implemented in diferent order to assignment:  
     1. Measurement train and test datasets are labeled in order to extract only mean and standard deviaton related columns. Column identification rules are following: Those columns, that contain 'Mean()', 'mean()', 'Std()' or 'std()' within column name are taken into account  
     2. Activities and Subjects datasets are prepared  
