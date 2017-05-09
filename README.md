@@ -1,4 +1,4 @@
-#Getting and Cleaning Data Course Project
+# Getting and Cleaning Data Course Project
 
 This project processes data from the source (https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip) according to the following conceptual steps required in the assignment:      
 1. Merges the training and the test sets to create one data set.  
@@ -33,7 +33,7 @@ This project processes data from the source (https://d396qusza40orc.cloudfront.n
 - 'subject_test.txt'  
   
   
-###Repository contains the following files:
+### Repository contains the following files:
 
 - 'README.md': This text  
   

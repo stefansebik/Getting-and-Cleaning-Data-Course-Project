@@ -1,7 +1,7 @@
 # Code Book  
   
 ****
-###Note on measurement variables name format:  
+### Note on measurement variables name format:  
 Variable name contain following components (separated by underscore):  
 1. time|freq - Time or Frequency domain measurement  
 2. body|gravity - Body or Gravity related measurement  
