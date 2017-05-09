@@ -17,7 +17,8 @@ This project processes data from the source (https://d396qusza40orc.cloudfront.n
 * each command within script file **run_analysis.R** is commented. Therefore please see the file itself for detailed processing explanation.   
 * Tidy data set required in step 5 follows "wide form". Its validity is in detail explained here: https://thoughtfulbloke.wordpress.com/2015/09/09/getting-and-cleaning-the-assignment/  
 * Tidy data set submitted into Coursera, can be loaded into R using the following command:  
-``` tidy <- read.table("tidy_data.txt", header = TRUE)
+```  
+tidy <- read.table("tidy_data.txt", header = TRUE)
 ```  
   
 **Source data files used for processing**:  
