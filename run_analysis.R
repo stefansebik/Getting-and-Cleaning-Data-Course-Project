@@ -2,10 +2,10 @@ library(dplyr)
 
 # ************** PREPARE FEATURE MEASUREMENTS DATASETS **************
 # read train and test feature measurements dataset
-x_train <- read.table("project/X_train.txt", header = FALSE)
-x_test <- read.table("project/X_test.txt", header = FALSE)
+x_train <- read.table("X_train.txt", header = FALSE)
+x_test <- read.table("X_test.txt", header = FALSE)
 # read feature names list
-feat <- read.table("project/features.txt")
+feat <- read.table("features.txt")
 # label variables of measurement datasets according to feature names list
 names(x_train) <- feat[,2]
 names(x_test) <- feat[,2]
@@ -16,20 +16,20 @@ x_test_sub <- x_test[, grep(name_pattern, names(x_test))]
 
 # *************** PREPARE ACTIVITY DATASETS **********
 # read train and test activity datasets
-y_train <- read.table("project/y_train.txt", header = FALSE)
-y_test <- read.table("project/y_test.txt", header = FALSE)
+y_train <- read.table("y_train.txt", header = FALSE)
+y_test <- read.table("y_test.txt", header = FALSE)
 names(y_train) <- "activity_id"
 names(y_test) <- "activity_id"
 # read activity labels dataset
-act_lbl <- read.table("project/activity_labels.txt")
+act_lbl <- read.table("activity_labels.txt")
 names(act_lbl) <- c("activity_id","activity_name")
 # join activity IDs with their labels
 activ_train <- inner_join(y_train, act_lbl, by = "activity_id")
 activ_test <- inner_join(y_test, act_lbl, by = "activity_id")
 
 # *************** PREPARE SUBJECT DATASETS ***********
-subj_train <- read.table("project/subject_train.txt")
-subj_test <- read.table("project/subject_test.txt")
+subj_train <- read.table("subject_train.txt")
+subj_test <- read.table("subject_test.txt")
 
 # *************** MERGE ALL TOGETHER AND RENAME MEASUREMENT LABELS ****************
 # merge train and test measurement datasets with corresponding activities and subjects
